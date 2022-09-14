@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/oleg/Documents/ПРОГРАММЫ/C_PROG/Examples/Example001_HelloConsole/Example001_HelloConsole.csproj": {}
+  },
+  "projects": {
+    "/Users/oleg/Documents/ПРОГРАММЫ/C_PROG/Examples/Example001_HelloConsole/Example001_HelloConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oleg/Documents/ПРОГРАММЫ/C_PROG/Examples/Example001_HelloConsole/Example001_HelloConsole.csproj",
+        "projectName": "Example001_HelloConsole",
+        "projectPath": "/Users/oleg/Documents/ПРОГРАММЫ/C_PROG/Examples/Example001_HelloConsole/Example001_HelloConsole.csproj",
+        "packagesPath": "/Users/oleg/.nuget/packages/",
+        "outputPath": "/Users/oleg/Documents/ПРОГРАММЫ/C_PROG/Examples/Example001_HelloConsole/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oleg/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
