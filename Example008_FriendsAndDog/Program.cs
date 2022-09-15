@@ -25,7 +25,7 @@ while (distance > distanceLimith)
 
     timeToMeet = distance / speed;
     distance = distance - timeToMeet * (firstFriendSpeed + secondFriendSpeed);
-    dogCounter = dogCounter + 1;
+    dogCounter ++;
     Console.Write("Distance ");
     Console.WriteLine(distance);
 }
