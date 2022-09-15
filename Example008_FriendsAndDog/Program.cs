@@ -2,11 +2,11 @@
 int secondFriendSpeed = 5;
 int dogSpeed = 20;
 double distance = 100;
-int distanceLimith = 10;
+int distanceLimith = 5;
 int dogCounter = 0;
 int dogDirection = 1;
 double timeToMeet = 0;
-double speed = 0;
+int speed = 0;
 
 while (distance > distanceLimith)
 {
@@ -29,5 +29,4 @@ while (distance > distanceLimith)
     Console.Write("Distance ");
     Console.WriteLine(distance);
 }
-Console.Write("Count = ");
-Console.WriteLine(dogCounter);
+Console.WriteLine($"Count: {dogCounter}");
