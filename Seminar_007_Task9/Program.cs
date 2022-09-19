@@ -22,7 +22,7 @@
     {Console.WriteLine($"max = {ones} \n");}
 }
 
-Task9();
+// Task9();
 
 
 void Task11()
@@ -43,7 +43,7 @@ void Task11()
    
 }
 
-Task11();
+// Task11();
 
 
 void Task12()
@@ -70,7 +70,7 @@ void Task12()
     }
 }
 
-Task12();
+// Task12();
 
 void Task14()
 {
@@ -93,7 +93,32 @@ void Task14()
     }
 }
 
-Task14();
+// Task14();
+
+
+void Task16()
+{
+    // 16. Напишите программу, которая принимает на вход два числа 
+    // и проверяет, является ли одно число квадратом другого.
+
+    Console.WriteLine();
+    Console.Write("Enter number 'a': ");
+    int a = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter number 'b': ");
+    int b = Convert.ToInt32(Console.ReadLine());
+
+    if (a == b * b || b == a * a)
+    {
+        Console.WriteLine("Yes");
+    }
+    else
+    {
+        Console.WriteLine("No");
+    }
+}
+
+Task16();
+
 
 
 
