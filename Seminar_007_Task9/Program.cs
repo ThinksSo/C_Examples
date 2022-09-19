@@ -44,3 +44,30 @@ void Task11()
 }
 
 Task11();
+
+
+void Task12()
+{
+// 12. Напишите программу, которая будет принимать на вход два числа 
+// и выводить, является ли второе число кратным первому. 
+// Если число 2 не кратно числу 1, то программа выводит остаток от деления.
+
+    Console.WriteLine();
+    Console.Write("Enter number 'a': ");
+    int a = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter number 'b': ");
+    int b = Convert.ToInt32(Console.ReadLine());
+
+    int dev = b % a;
+
+    if (dev == 0)
+    {
+        Console.WriteLine($"{b} multiple {a}");
+    }
+    else
+    {
+        Console.WriteLine(dev);
+    }
+}
+
+Task12();
