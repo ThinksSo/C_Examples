@@ -66,13 +66,13 @@ void Task22()
     */
 
     Console.Write("Enter number: ");
-    int sq = Convert.ToInt32(Console.ReadLine());
-    int i = 1;
+    int num = Convert.ToInt32(Console.ReadLine());
+    int count = 1;
 
-    while (i < sq+1)
+    while (count < num+1)
     {
-        Console.WriteLine($"Square {i} = {Math.Pow(i, 2)}");
-        i++;
+        Console.WriteLine($"{count} * {count} = {Math.Pow(count, 2)}");
+        count++;
     }
 
 }
