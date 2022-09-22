@@ -44,6 +44,24 @@ void Task18()
     else Console.WriteLine("Invalid input");
 }
 
+void Task21()
+{
+    /* Задача 21: Напишите программу, которая принимает на вход координаты двух точек 
+    и находит расстояние между ними в 2D пространстве.
+    */
+    Random random = new Random();
+    int x1 = random.Next(0, 100);
+    int y1 = random.Next(0, 100);
+    int x2 = random.Next(0, 100);
+    int y2 = random.Next(0, 100);
+    double lenght = Math.Sqrt(Math.Pow((x2 - x1),2) + Math.Pow((y2 - y1),2));
+    Console.WriteLine($" A({x1}, {y1}); B({x2}, {y2}) lenght = {lenght}) ");
 
-//Task17();
-Task18();
+  }
+
+
+
+
+// Task17();
+// Task18();
+Task21();
