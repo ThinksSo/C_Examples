@@ -59,9 +59,25 @@ void Task21()
 
   }
 
+void Task22()
+{
+    /* Задача 22: Напишите программу, которая принимает на вход число (N) 
+    и выдаёт таблицу квадратов чисел от 1 до N.
+    */
 
+    Console.Write("Enter number: ");
+    int sq = Convert.ToInt32(Console.ReadLine());
+    int i = 1;
 
+    while (i < sq+1)
+    {
+        Console.WriteLine($"Square {i} = {Math.Pow(i, 2)}");
+        i++;
+    }
+
+}
 
 // Task17();
 // Task18();
-Task21();
+// Task21();
+Task22();
