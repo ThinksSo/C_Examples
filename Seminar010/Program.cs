@@ -179,3 +179,34 @@ Task35();
 Task37();
 
 
+/*
+Задача 2. Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц. 
+Размер массива должен совпадать с квадратом количества единиц в нём.
+*/
+void Task1S4()
+{
+    Random random = new Random();
+    int countOnes = random.Next(1, 11);
+    Console.WriteLine("Q-ty elements " + countOnes);
+    int size = countOnes * countOnes;
+    int[] numbers = new int[size];
+    int randomIndex = random.Next(0, size);
+
+    for (int i = 0; i < countOnes; i++)
+    {
+        while(numbers[randomIndex] ==1)
+        {
+            Console.WriteLine($"Element {randomIndex + 1} = 1, search next");
+            randomIndex = random.Next(0, size);
+        }
+        numbers[randomIndex] = 1;
+        System.Console.WriteLine($"Element {randomIndex + 1} -> 1");
+    }
+    PrintArray(numbers);
+}
+
+
+
+Task1S4();
+
+
