@@ -44,7 +44,7 @@ void FillArray(int[] numbers,
     Random random = new Random();
     for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = random.Next(-9, 10);
+        numbers[i] = random.Next(-10, 100);
     }
 }
 
@@ -65,12 +65,117 @@ void PrintArray(int[] numbers)
 void Task32()
 {
     int size = 12;
-    int[] numbers = new int [size];
+    int[] numbers = new int[size];
     FillArray(numbers);
     PrintArray(numbers);
+    ChangeValue(numbers);
+    PrintArray(numbers);
+    Console.WriteLine();
+}
+
+void ChangeValue(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        numbers[i] *= -1;
+    }
+}
+
+//Задача 33: Задайте массив. 
+// Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+/*
+void Task33()
+{
+    int size = 12;
+    int[] numbers = new int[size]; 
+    FillArray(numbers);
+    PrintArray(numbers);
+    CheckArray(numbers, check);
+}
+
+void CheckArray(int[] numbers, int check)
+{
+    
+    bool flag = false;
+    /*
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if(check == numbers[i]) flag = true;
+    }
+    if (flag == true)
+    */
+
+/*
+    int i = 0;
+    while(!flag && i = numbers.Length)
+    {
+        if(check == numbers[i]) 
+        {
+            flag = true;
+        }
+        i++;
+    }
+    if (flag)
+    Console.WriteLine($"{check} in array");
+    else
+    Console.WriteLine($"{check} not in array");
+}
+*/
+
+
+/*
+Задача 35: Задайте одномерный массив, состоящий из случайных чисел. 
+Найдите количество элементов массива, значения которых лежат в отрезке [10,99]. 
+[5, 18, 123, 6, 2] -> 1
+[1, 2, 3, 6, 2] -> 0
+[10, 11, 12, 13, 14] -> 5
+*/
+void Task35()
+{
+    int size = 12;
+    int[] numbers = new int[size];
+    FillArray(numbers);
+    PrintArray(numbers);
+    FindArray(numbers);
+}
+
+void FindArray(int[] numbers)
+{
+    int count = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] >= 10 && numbers[i] < 99) count++;
+    }
+    Console.WriteLine(count);
+    Console.WriteLine();
+}
+
+
+// Задача 37: Найдите произведение пар чисел в одномерном массиве. 
+// Парой считаем первый и последний элемент, второй и предпоследний и т.д. 
+// Результат запишите в новом массиве.
+void Task37()
+{
+    int size = 12;
+    int[] numbers = new int[size];
+    FillArray(numbers, -9, 9);
+    PrintArray(numbers);
+
+    int maxIndex = size - 1;
+    for (int i = 0; i < size/2; i++)
+    {
+        Console.WriteLine($"{numbers[i]} x {numbers[maxIndex - i]} = {numbers[i] * numbers[maxIndex]}");
+    }
+    if (size % 2 == 1) Console.WriteLine(numbers[size/2]);
+
     Console.WriteLine();
 }
 
 
 //Task31();
-Task32();
+// Task32();
+// Task33();
+Task35();
+Task37();
+
+
